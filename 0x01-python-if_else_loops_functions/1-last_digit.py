@@ -2,7 +2,6 @@
 import random
 number = random.randint(-10000, 10000)
 
-/* initialise var_ld */
 ld =number % 10
 
 if ld > 5:
