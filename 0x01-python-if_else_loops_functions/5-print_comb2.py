@@ -2,6 +2,6 @@
 
 for x in range(100):
     if x < 10:
-        print("0"x)
+        print("0")
     end = ", " if x < 99 else " "
     print("{}".format(x), end=end)
