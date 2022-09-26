@@ -2,4 +2,4 @@
 
 for x in range(100):
     end = ", " if x < 99 else " "
-    print("{}".format(x), end = end)
+    print("{}".format(x), end= end)
