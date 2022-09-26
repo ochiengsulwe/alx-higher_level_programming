@@ -10,9 +10,9 @@ ld_str = num_str[-1]
 # Convert the last digit string to an integer
 ld = int(ld_str)
 
-#ld = number % 10
+# ld = number % 10
 
-if number >= 0 and ld > 5:
+if ld > 5:
     print(f"Last digit of {number} is {ld} and is greater than 5")
 
 elif ld == 0:
