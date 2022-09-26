@@ -8,6 +8,7 @@ num_str = repr(number)
 ld_str = num_str[-1]
 
 # Convert the last digit string to an integer
+ld = number % 10
 ld = int(ld_str)
 
 # ld = number % 10
