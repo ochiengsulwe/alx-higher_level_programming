@@ -1,7 +1,16 @@
 #!/usr/bin/python3
 import random
 number = random.randint(-10000, 10000)
-ld = number % 10
+# get the string representation of number
+num = repr(number)
+
+# access the last string of the digit string
+ld_str = num[-1]
+
+# convert the last digit string back to integer
+
+ld = int(ld_str)
+
 if ld > 5:
     print(f"Last digit of {number} is {ld} and is greater than 5")
 
