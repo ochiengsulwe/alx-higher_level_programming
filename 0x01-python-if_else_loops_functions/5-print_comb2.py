@@ -2,4 +2,4 @@
 
 for x in range(0, 99):
     print("{0:02d}".format(x), end=", ")
-print("{:f}".format(99))
+print("{:d}".format(99))
