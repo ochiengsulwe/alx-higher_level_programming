@@ -2,7 +2,7 @@
 
 # a function to list number of arguments in a function
 if __name__ == "__main__":
-    def no_arg(*args)
+    def no_arg(*args):
         return(len(args), argv)
             if no_arg() == 0:
 	        print("{} arguments.".format(len(args)))
