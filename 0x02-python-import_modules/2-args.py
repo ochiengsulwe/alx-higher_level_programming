@@ -5,7 +5,7 @@ if __name__ == "__main__":
     def no_arg(*args):
         return(len(args), argv)
         if no_arg() == 0:
-	    print("{} arguments.".format(len(args)))
+	    print("{} arguments." .format(len(args)))
         elif no_arg() == 1:
             print("{} argument: {}".format(len(args), argv))
         else:
