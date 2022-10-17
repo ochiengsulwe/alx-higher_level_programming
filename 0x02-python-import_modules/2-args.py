@@ -8,7 +8,7 @@ if __name__ == "__main__":
         print("{:d} argument: ".format(length))
     print("{:s}".format(argv))
 
-    else:
+else:
         if length == 0:
 	print("{:d} arguments. ".format(length))
 	else:
