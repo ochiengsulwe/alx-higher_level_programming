@@ -9,7 +9,7 @@ if __name__ == "__main__":
     print("{:s}".format(argv))
 
 else:
-        if length == 0:
+    if length == 0:
 	print("{:d} arguments. ".format(length))
 	else:
 	for k in range(length):
