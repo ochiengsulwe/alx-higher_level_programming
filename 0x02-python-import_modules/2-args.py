@@ -7,7 +7,7 @@ if __name__ == "__main__":
     if length == 1:
         print("{:d} argument: ".format(length))
     print("{:s}".format(argv))
-    elif length is not 1:
+    else:
         if length == 0:
 	print("{:d} arguments. ".format(length))
 	else:
