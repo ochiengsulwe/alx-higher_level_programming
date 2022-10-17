@@ -5,7 +5,7 @@ if __name__ == "__main__":
     length = len(argv)
 
     if length == 1:
-    print("{:d} argument: ".format(length))
+        print("{:d} argument: ".format(length))
     print("{:s}".format(argv))
     elif length is not 1:
         if length == 0:
