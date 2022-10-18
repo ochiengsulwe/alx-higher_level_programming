@@ -5,8 +5,8 @@ def element_at(my_list, idx):
 
     if (idx < length):
         print("Element at index {:d} is {:d}".format(idx, my_list[idx]))
-    else:
-        if (idx < 0) or (idx > length):
-            return None
+#  else:
+#       if (idx < 0) or (idx > length):
+#           return None
 
 
