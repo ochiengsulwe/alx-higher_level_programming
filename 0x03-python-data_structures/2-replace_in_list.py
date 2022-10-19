@@ -5,4 +5,5 @@ def replace_in_list(my_list, idx, element):
     if (idx > length - 1) or (idx < 0):
         return my_list
     else:
-        return my_list.pop(idx).insert(idx, element)
+        new_list =  my_list.pop(idx)
+        return new_list.insert(idx, element)
