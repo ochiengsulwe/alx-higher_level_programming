@@ -2,6 +2,6 @@
 
 def islower(c):
 
-    for c in range(97, 123)
+    for c in range(97, 123):
         return True
     return False
