@@ -1,7 +1,11 @@
 #!/usr/bin/python3
 
 def add_tuple(tuple_a=(), tuple_b=()):
-    def extract(x: tuple, i: int) -> into:
-        return x[i] if len(x) >= i + 1 else 0
+    def extract_value(t, index):
+        return t[index] if len(t) > index else 0
 
-    return (extract(tuple_a, 0) + etract(tuple_b, 0), extract(tuple_a, 1) + extract(tuple_b, 1)
+    result = (
+        extract_value(tuple_a, 0) + extract_value(tuple_b, 0),
+        extract_value(tuple_a, 1) + extract_value(tuple_b, 1)
+    )
+    return result
