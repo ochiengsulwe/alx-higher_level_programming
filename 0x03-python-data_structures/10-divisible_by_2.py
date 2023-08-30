@@ -10,3 +10,7 @@ def divisible_by_2(my_list=[]):
             result_list.append(False)
             print(f"{item} is not divisible by 2")
     return result_list
+
+
+if __name__ == "__main__":
+    result = divisible_by_2(my_list)
