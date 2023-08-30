@@ -3,6 +3,7 @@
 from calculator_1 import add, sub, mul, div
 import sys
 
+
 def validate_input(args):
     if len(args) != 4:
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
@@ -14,6 +15,7 @@ operator_mapping = {
     "*": mul,
     "/": div
 }
+
 
 if __name__ == "__main__":
     validate_input(sys.argv)
