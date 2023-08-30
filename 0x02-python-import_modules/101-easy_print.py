@@ -1,2 +1,2 @@
 #!/usr/bin/python3
-import easy_print
+exec(open("easy_print.py").read())
