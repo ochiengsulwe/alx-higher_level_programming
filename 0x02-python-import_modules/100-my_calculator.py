@@ -9,6 +9,7 @@ def validate_input(args):
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         exit(1)
 
+
 operator_mapping = {
     "+": add,
     "-": sub,
