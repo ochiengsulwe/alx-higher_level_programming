@@ -2,6 +2,7 @@
 
 import sys
 
+
 def calculate_sum(arguments):
     length = len(arguments)
     summ = 0
@@ -12,7 +13,7 @@ def calculate_sum(arguments):
             summ += int(arguments[i])
     return summ
 
+
 if __name__ == "__main__":
     summ = calculate_sum(sys.argv[1:])
     print("{:d}".format(summ))
-
