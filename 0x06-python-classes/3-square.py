@@ -21,13 +21,13 @@ class Square:
         elif size < 0:
             raise ValueError("size must be >= 0")
 
-        def area(self):
-            """calculates the area of the square.
+    def area(self):
+        """calculates the area of the square.
 
-            Args:
-                None
+        Args:
+            None
 
-            Returns:
-                int: the value of the areaof the square.
-            """
-            return (self.__size ** 2)
+        Returns:
+            int: the value of the areaof the square.
+        """
+        return (self.__size ** 2)
