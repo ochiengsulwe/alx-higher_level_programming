@@ -2,10 +2,6 @@
 class Square:
     """ This is an non-functional sqaure class yet.
 
-    Attributes:
-        None
-
-    Methods:
-        None
+    A square is a four-sided shape with equal lengths.
     """
     pass
