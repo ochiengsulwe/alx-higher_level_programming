@@ -3,7 +3,10 @@
 
 
 class Square:
-    """a class definning a shape of equal foursides."""
+    """a class definning a shape of equal foursides.
+
+    This class illustrates a shape of same size.
+    """
 
     def __init__(self, size=0)
     """instantiating the classs with optional field size.
