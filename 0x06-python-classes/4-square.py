@@ -8,7 +8,7 @@ class Square:
     This class illustrates a shape of same size.
     """
 
-    def __init__(self, size=0)
+    def __init__(self, size=0):
     """instantiating the classs with optional field size.
 
     Args:
