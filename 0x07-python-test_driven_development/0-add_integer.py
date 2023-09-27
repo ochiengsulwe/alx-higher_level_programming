@@ -1,8 +1,5 @@
 #!/usr/bin/python3
-"""add_integer module sums two arguments integers.
-
-It has only one function `add_integer()` defined in it.
-"""
+"""add_integer module sums two arguments integers."""
 
 
 def add_integer(a, b=98):
