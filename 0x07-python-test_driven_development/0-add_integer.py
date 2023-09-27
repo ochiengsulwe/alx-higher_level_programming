@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""add_integer module sums two arguments integers."""
+"""This module defines a function for adding two integers or floats."""
 
 
 def add_integer(a, b=98):
