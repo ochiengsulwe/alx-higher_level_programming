@@ -7,7 +7,7 @@ def text_indentation(text):
 
     Args:
         text(string): The text to print.
-    
+
     Raises:
         TypeError: If text is not a string.
     """
