@@ -3,6 +3,8 @@
 
 It has only one function `add_integer()` defined in it.
 """
+
+
 def add_integer(a, b=98):
     """The function adds to integers.
 
