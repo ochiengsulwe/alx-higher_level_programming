@@ -1,10 +1,10 @@
---crezate database
+--create database
 
 CREATE DATABASE IF NOT EXISTS `hbtn_0d_usa`;
 
 -- specify database to use
 
-USE `hbtn_0d_usa`;
+USE hbtn_0d_usa;
 
 -- creates states table
 
