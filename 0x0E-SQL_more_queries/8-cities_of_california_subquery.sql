@@ -1,7 +1,7 @@
 -- Script to list cities of California without using JOIN
 
 -- Use the specified database passed as an argument
-USE $1;
+USE hbtn_0d_usa;
 
 -- List all cities of California
 SELECT cities.id, cities.name
