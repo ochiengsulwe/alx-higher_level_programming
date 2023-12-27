@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-from models.base import Base
 """The class `Rectangle` inherits from `Base` class."""
+from models.base import Base
 
 
 class Rectangle(Base):
