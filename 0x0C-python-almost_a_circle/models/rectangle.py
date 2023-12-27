@@ -34,6 +34,8 @@ class Rectangle(Base):
 
     @width.setter
     def width(self, value):
+        self.validate_integer("width", value)
+        self.validate_positive("width", value)
         self.__width = value
 
     @property
@@ -43,6 +45,8 @@ class Rectangle(Base):
 
     @height.setter
     def height(self, value):
+        self.validate_integer("height", value)
+        self.validate_positive("height", value)
         self.__height = value
 
     @property
@@ -52,6 +56,8 @@ class Rectangle(Base):
 
     @x.setter
     def x(self, value):
+        self.validate_integer("x", value)
+        self.validate_cordinate("x", value)
         self.__x = value
 
     @property
@@ -61,4 +67,49 @@ class Rectangle(Base):
 
     @y.setter
     def y(self, value):
+        self.validate_integer("y", value)
+        self.validate_cordinate("y", value)
         self.__y = value
+
+    def validate_integer(self, attribute_name, value):
+        """Checks for only integer inputs.
+
+        Args:
+            attribute_name (str): The attribute name to be checked.
+            value (int): The integer value of the attribute to be checked.
+
+        Raises:
+            TypeError: If the value is not an integer.
+
+        Example:
+            validate_integer('width', 10)
+        """
+
+        if not isinstance(value, int):
+            raise TypeError(f"{attribute_name} must be an integer")
+
+    def validate_positive(self, attribute_name, value):
+        """Validates if the value is positive.
+
+        Args:
+            attribute_name (str): The attribute name to be checked.
+            value (int): The integer value of the attribute to be checked.
+
+        Raises:
+            ValueError: If the value is less than 0.
+        """
+        if value <= 0:
+            raise ValueError(f"{attribute_name} must be > 0")
+
+    def validate_cordinate(self, attribute_name, value):
+        """Validates if cordinate is not a negative value.
+
+        Args:
+            attribute_name (str): The attribute name to be checked.
+            value (int): The integer value of the attribute to be checked.
+
+        Raises:
+            ValueError: If the value is less than 0.
+        """
+        if value < 0:
+            raise ValueError(f"{attribute_name} must be >= 0")
