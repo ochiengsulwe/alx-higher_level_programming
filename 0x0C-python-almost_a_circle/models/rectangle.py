@@ -22,7 +22,6 @@ class Rectangle(Base):
             __y (int): private instance attribute.
         """
         super().__init__(id)
-        self.validate_integer("width", value)
         self.__width = width
         self.__height = height
         self.__x = x
