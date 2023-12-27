@@ -22,8 +22,7 @@ class Rectangle(Base):
             __y (int): private instance attribute.
         """
         super().__init__(id)
-        if isinstance(width, int) and width > 0:
-            self.__width = width
+        self.__width = width
         self.__height = height
         self.__x = x
         self.__y = y
@@ -86,7 +85,7 @@ class Rectangle(Base):
             validate_integer('width', 10)
         """
 
-        if not isinstance(value, int):
+        if type(value) != int:
             raise TypeError(f"{attribute_name} must be an integer")
 
     def validate_positive(self, attribute_name, value):
