@@ -132,4 +132,4 @@ class Rectangle(Base):
         attributes = ["id", "width", "height", "x", "y"]
 
         for attr, value in zip(attributes, args):
-            setattr(self, f"__{attr}", value)
+            setattr(self, f"{attr}", value)
