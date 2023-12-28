@@ -110,3 +110,9 @@ class Rectangle(Base):
         ]
         for row in rec:
             print(''.join(row))
+
+    def __str__(self):
+        return (
+                f"[{self.__class__.__name__}] {(self.id)}"
+                f"{self.__x}/{self.__y} - {self.__width}/{self.__height}"
+            )
