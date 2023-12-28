@@ -127,9 +127,13 @@ class Rectangle(Base):
                 3. height: The `height` attribute.
                 4. x: The `x` cordinate attribute.
                 5. y: The `y` cordinate attribute.
-
+            *kwargs: List of varibale length kew-word arguments.
+                Each key represents a attribute value of the instance.
         """
-        attributes = ["id", "width", "height", "x", "y"]
-
-        for attr, value in zip(attributes, args):
-            setattr(self, f"{attr}", value)
+        if args:
+            attributes = ["id", "width", "height", "x", "y"]
+            for attr, value in zip(attributes, args):
+                setattr(self, f"{attr}", value)
+        elif kwargs:
+            for att, value in kwargs.items():
+                setattr(self, att, value)
