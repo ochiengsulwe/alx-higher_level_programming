@@ -113,6 +113,22 @@ class Rectangle(Base):
 
     def __str__(self):
         return (
-                f"[{self.__class__.__name__}] ({self.id}) "
+                f"[{self.__class__.__name__}] ({self.id})"
                 f"{self.__x}/{self.__y} - {self.__width}/{self.__height}"
             )
+    def update(self, *args):
+        """Assigns value to the `Rectangle` attributes.
+
+        Args:
+            *args (int): Varible number of positional arguments in this order:
+                1. id (int): The `id` attribute.
+                2. width: The `width` attribute.
+                3. height: The `height` attribute.
+                4. x: The `x` cordinate attribute.
+                5. y: The `y` cordinate attribute.
+
+        """
+        attributes = ['id', 'width', 'height', 'x', 'y']
+
+        for attr, value in zip(attributes, args):
+            setattr(self, f"__{attr}", value)
