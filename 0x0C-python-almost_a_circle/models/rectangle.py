@@ -129,7 +129,7 @@ class Rectangle(Base):
                 5. y: The `y` cordinate attribute.
 
         """
-        attributes = ['id', 'width', 'height', 'x', 'y']
+        attributes = ["id", "width", "height", "x", "y"]
 
         for attr, value in zip(attributes, args):
             setattr(self, f"__{attr}", value)
