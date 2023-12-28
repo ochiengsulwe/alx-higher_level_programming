@@ -26,15 +26,15 @@ class Square(Rectangle):
 
             The value is determined from both the width parse and the height.
             """
-            return (self.__width)
+            return (self.width)
 
         @size.setter
         def size(self, value):
-            self.__width = value
-            self.__height = value
+            self.width = value
+            self.height = value
 
         def __str__(self):
             return (
-                   f" [{self.__class__.__name__}] ({self.__id})"
-                   f"{self.__x}/{self.__y} - {self.__width}"
+                   f" [{self.__class__.__name__}] ({self.id})"
+                   f"{self.x}/{self.y} - {self.width}"
                 )
