@@ -105,7 +105,7 @@ class Rectangle(Base):
     def display(self):
         """Prints to the stdout a rectangle using `#`"""
         rec = [
-                ['#' for shape in range(sel.__width)]
+                ['#' for shape in range(self.__width)]
                 for shape in range(self.__height)
         ]
         for row in rec:
