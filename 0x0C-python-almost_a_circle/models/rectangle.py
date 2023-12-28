@@ -117,7 +117,7 @@ class Rectangle(Base):
                 f"{self.__x}/{self.__y} - {self.__width}/{self.__height}"
             )
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """Assigns value to the `Rectangle` attributes.
 
         Args:
@@ -127,7 +127,7 @@ class Rectangle(Base):
                 3. height: The `height` attribute.
                 4. x: The `x` cordinate attribute.
                 5. y: The `y` cordinate attribute.
-            *kwargs: List of varibale length kew-word arguments.
+            **kwargs: List of varibale length kew-word arguments.
                 Each key represents a attribute value of the instance.
         """
         if args:
