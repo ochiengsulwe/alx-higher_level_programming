@@ -6,9 +6,8 @@ __pycache__/
 *.py.swo
 *.py.swp
 
-# Logs and databases
+# Logs
 *.log
-*.sqlite3
 
 # Environment and virtual environment files
 .env
