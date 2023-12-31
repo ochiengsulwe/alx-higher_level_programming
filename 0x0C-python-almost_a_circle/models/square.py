@@ -18,7 +18,7 @@ class Square(Rectangle):
         Attributes:
             __size (int): The dimension of the square.
         """
-        super().__init__(size, x, y, id)
+        super().__init__(size,size, x, y, id)
 
         @property
         def size(self):
