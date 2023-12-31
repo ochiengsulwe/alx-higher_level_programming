@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """A square is a special type of a rectangle. Inherits from class Rectangle."""
-from models.rectangle import Rectangle
-from models.base import Base
+from rectangle import Rectangle
+from base import Base
 
 
 class Square(Rectangle):
@@ -26,15 +26,15 @@ class Square(Rectangle):
 
             The value is determined from both the width parse and the height.
             """
-            return (self.width)
+            return (self.__width)
 
         @size.setter
         def size(self, value):
-            self.width = value
-            self.height = value
+            self.__width = value
+            self.__height = value
 
         def __str__(self):
             return (
-                   f"[{self.__class__.__name__}] ({self.id})"
-                   f"{self.x}/{self.y} - {self.width}"
+                   f"[{self.__class__.__name__}] ({self.__id}) "
+                   f"{self.__x}/{self.__y} - {self.__width}"
                 )
