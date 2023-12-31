@@ -38,3 +38,23 @@ class Square(Rectangle):
                    f"[{self.__class__.__name__] ({self.id})  "
                    f"{self.x}/{self.y} - {self.width}"
                 )
+
+        def update(self, *args, **kwargs):
+            """Dynamically sets instance attributes.
+
+            Args:
+                *args (int): Accepts varible number or arguments as ordered:
+                    1. id: the class attribute.
+                    2. size: the size of the square.
+                    3. x: x-axis represenation on the plane.
+                    4. y: y-axis represantation on a plane.
+                **kwargs (int): key word arguments of a variable number.
+                    Each should represent the instance attribute.
+            """
+            if args:
+                attributes = ["id", "size", "size", "x", "y"]
+                for attr, value in zip(attributes, args):
+                    setattr(self, attr, value)
+            elif kwargs:
+                for attr, value in kwargs.items():
+                    setattr(self, attr, value)
