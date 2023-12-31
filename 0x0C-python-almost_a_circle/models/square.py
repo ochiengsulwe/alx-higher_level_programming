@@ -52,7 +52,7 @@ class Square(Rectangle):
                     Each should represent the instance attribute.
             """
             if args:
-                attributes = ["id", "size", "size", "x", "y"]
+                attributes = ["id", "size", "x", "y"]
                 for attr, value in zip(attributes, args):
                     setattr(self, attr, value)
             elif kwargs:
