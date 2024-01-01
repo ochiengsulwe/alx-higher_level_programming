@@ -26,7 +26,7 @@ class Square(Rectangle):
 
         The value is determined from both the width parse and the height.
         """
-            return (self.width)
+        return (self.width)
 
     @size.setter
     def size(self, value):
