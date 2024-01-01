@@ -69,7 +69,7 @@ class Square(Rectangle):
         dict_rep = {
                 key.replace(class_name_prefix, ''): value
                 for key, value in self.__dict__.items()
-                if key.startswith(class_name_prefix)
+                if key.startswith(class_name_prefix) and key != "_Rectangle__height"
             }
         dict_rep['id'] = self.id
         return dict_rep
