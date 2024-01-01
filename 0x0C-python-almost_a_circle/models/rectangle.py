@@ -161,4 +161,9 @@ class Rectangle(Base):
             4. x
             5. y
         """
-        return (self.__dict__)
+        class_name_prefix = f"{self.__class__name__}__"
+        return {
+                key.replace(class_name_prefix, ''): value
+                for key, value in self.__dict__.items()
+                if key.startswith(class_name_prefix)
+            }
