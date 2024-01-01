@@ -161,7 +161,7 @@ class Rectangle(Base):
             4. x
             5. y
         """
-        class_name_prefix = f"{self.__class__name__}__"
+        class_name_prefix = f"{self.__class__.__name__}__"
         return {
                 key.replace(class_name_prefix, ''): value
                 for key, value in self.__dict__.items()
