@@ -160,7 +160,9 @@ class Rectangle(Base):
             3. height
             4. x
             5. y
-        """
+        
+        I'll comment the below code for testing purposes
+
         class_name_prefix = f"{self.__class__.__name__}__"
         dictionary_represantation = {
                 key.replace(class_name_prefix, ''): value
@@ -169,3 +171,5 @@ class Rectangle(Base):
             }
         dictionary_represantion['id'] = self.id
         return dictionary_represantation
+        """
+        return self.__dict__
