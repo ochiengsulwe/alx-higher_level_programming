@@ -58,3 +58,18 @@ class Square(Rectangle):
         elif kwargs:
             for attr, value in kwargs.items():
                 setattr(self, attr, value)
+
+    def to_dictionary(self):
+        """Returns a dictionary of class `Square`.
+
+        The Key of the dictionary is the attribute name,
+            while the value is the assigned value of the attribute.
+        """
+        class_name_prefix = f"_{self.__class__.__name__}__"
+        attr_dict = {
+                key.replace(class_name_prefix, ''): value
+                for key, value in self.__dict__.items()
+                if key.startswith(class_name_prefix)
+            }
+        attr_dict['id'] = self.id
+        return attr_dict
