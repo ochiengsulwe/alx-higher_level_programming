@@ -160,7 +160,7 @@ class Rectangle(Base):
             3. height
             4. x
             5. y
-        
+
         I'll comment the below code for testing purposes
 
         class_name_prefix = f"_{self.__class__.__name__}__"
@@ -173,12 +173,10 @@ class Rectangle(Base):
         return dictionary_represantation
         """
         class_name_prefix = f"_{self.__class__.__name__}__"
-        dict_rep = {}
-        for key, value in self.__dict__.items():
-            if key.startswith(class_name_prefix):
-                key = key.replace(clas_name_prefix, '')
-                dict_rep[key]: value
-            else:
-                dict_rep[key]: value
-
+        dict_rep = {
+                key.replace(class_name_prefix, ''): value
+                for key, value in self.__dict__.items()
+                if key.startswith(class_name_prefix)
+            }
+        dict_rep['id'] = self.id
         return dict_rep
