@@ -20,12 +20,12 @@ class Square(Rectangle):
         """
         super().__init__(size, size, x, y, id)
 
-        @property
-        def size(self):
-            """Assigns the value for the square instance.
+    @property
+    def size(self):
+        """Assigns the value for the square instance.
 
-            The value is determined from both the width parse and the height.
-            """
+        The value is determined from both the width parse and the height.
+        """
             return (self.width)
 
     @size.setter
