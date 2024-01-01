@@ -162,8 +162,10 @@ class Rectangle(Base):
             5. y
         """
         class_name_prefix = f"{self.__class__.__name__}__"
-        return {
+        dictionary_represantation = {
                 key.replace(class_name_prefix, ''): value
                 for key, value in self.__dict__.items()
                 if key.startswith(class_name_prefix)
             }
+        dictionary_represantion['id'] = self.id
+        return dictionary_represantation
