@@ -66,7 +66,7 @@ class Square(Rectangle):
             while the value is the assigned value of the attribute.
         """
         class_name_prefix = f"_{self.__class__.__name__}__"
-        dict_rep =  {
+        dict_rep = {
                 key.replace(class_name_prefix, ''): value
                 for key, value in self.__dict__.items()
                 if key.startswith(class_name_prefix)
