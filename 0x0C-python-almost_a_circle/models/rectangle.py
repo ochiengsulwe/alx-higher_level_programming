@@ -150,3 +150,15 @@ class Rectangle(Base):
         elif kwargs:
             for att, value in kwargs.items():
                 setattr(self, att, value)
+
+    def to_dictionary(self):
+        """Returns the dictionary represantation of class `Rectangle`.
+
+        The dictionary contains all of the class attributes, not in order:
+            1. id
+            2. width
+            3. height
+            4. x
+            5. y
+        """
+        return (self.__dict__)
