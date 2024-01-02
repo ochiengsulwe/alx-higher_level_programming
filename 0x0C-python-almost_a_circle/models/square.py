@@ -65,11 +65,13 @@ class Square(Rectangle):
         The Key of the dictionary is the attribute name,
             while the value is the assigned value of the attribute.
         """
-        class_name_prefix = f"_{self.__class__.__name__}__"
+        class_name_prefix = "_Rectangle__"
         dict_rep = {
                 key.replace(class_name_prefix, ''): value
                 for key, value in self.__dict__.items()
-                if key.startswith(class_name_prefix) and key != "_Rectangle__height"
+                if key.startswith(class_name_prefix)
+                and key != "_Rectangle__height" and key != "_Rectangle__width"
             }
         dict_rep['id'] = self.id
+        dict_rep['size'] = self.size
         return dict_rep
