@@ -61,3 +61,17 @@ class Base(object):
 
         with open(json_file, "w") as jfile:
             jfile.write(json_string)
+
+    @staticmethod
+    def from_json_string(json_string):
+        """Returns the list represented by json_string.
+
+        Args:
+            json_string (str): A string representing a list of dictionaries.
+
+        Returns:
+            list: The list represented by json_string.
+        """
+        if not json_string:
+            return []
+        return json.loads(json_string)
