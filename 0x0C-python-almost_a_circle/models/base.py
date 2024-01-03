@@ -89,7 +89,9 @@ class Base(object):
         if cls.__name__ == "Rectangle":
             dummy_instance = cls(1, 1)
         elif cls.__name__ == "square":
-            dummy_instance = cls(1)
+            # Check if 'size' is in the dictionary, else set default size to 1.
+            size = dictionary.get('size', 1)
+            dummy_instance = cls(size)
 
         dummy_instance.update(**dictionary)
         return dummy_instance
