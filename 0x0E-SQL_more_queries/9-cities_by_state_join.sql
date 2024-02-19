@@ -1,7 +1,6 @@
 -- Script to list all cities with their respective states
 
--- Use the specified database passed as an argument
-USE $1;
+-- Use the specified database passed as an argument.
 
 -- List all cities with their respective states
 SELECT cities.id, cities.name, states.name AS state_name
