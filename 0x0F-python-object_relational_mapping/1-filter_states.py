@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""The script lists all states with a name starting with N.
+"""The script lists all states with name starting with N. It is case-sensitive
     
     The script only allow returns with capital N. Lower case n is ignored.
 """
