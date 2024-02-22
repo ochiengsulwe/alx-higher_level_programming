@@ -52,6 +52,6 @@ if __name__ == "__main__":
     if len(sys.argv) != 5:
         sys.exit(1)
 
-    uname, passwd, dbname, nsearch = sys.argv[1], sys.argv[2], sys.argv[3],
-    sys.argv[4]
+    uname, passwd = sys.argv[1], sys.argv[2]
+    dbname, nsearch = sys.argv[3], sys.argv[4]
     search(uname, passwd, dbname, nsearch)
