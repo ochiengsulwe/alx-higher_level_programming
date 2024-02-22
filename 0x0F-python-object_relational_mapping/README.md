@@ -10,18 +10,18 @@ within my code.
 ## Table of Contents
 - [MySQLdb](#mysqldb)
 - [SQLAlchemy](#sqlalchemy)
-- [Python Virtual Envirnments](#virtual)
+- [Python Virtual Envirnments](#python virtual environments)
 - [Conclusion](#conclusion)
 
 ## MySQLdb
-This is a python module that provides an intrface to the MysQL database server.
+This is a Python module that provides an interface to the `MysQL` database server.
 In a nutshell, it is a library that allows Python programs to communicate with
 MySQL database.
 It allows me to write/incorporate SQL syntax within my Python code. With this
 comes speed and efficiency at runtime.
 
 ## SQLAlchemy
-This is a pyhton module that provides an interface to MySQL database, but with a high level of abstraction.
+This is a Pyhton module that provides an interface to MySQL database, but with a high level of abstraction.
 What this means is that, I don't have to remember the SQl syntax, but at least
 understand what it can do. On the flip side, I have to learn and know the sytax
 of SQLAlchemy.
@@ -35,7 +35,8 @@ define different and specific needs of my project, without bringing confusion at
 the global level.
 
 ## Conclusion
-I have to say that, I prefer working with MySQLdb, as opposed to SQLAlchemy. Not
+I have to say that, I prefer working with `MySQLdb`, as opposed to `SQLAlchemy`. Not
 because of any specific reason, but because I love working with databases
 directly, with no abstraction.
-Virtual envirnments, are a blessing on their on way.
+
+Virtual envirnments, are a blessing in their own  beautiful way.
