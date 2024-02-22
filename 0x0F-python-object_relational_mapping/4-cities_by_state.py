@@ -52,6 +52,7 @@ if __name__ == "__main__":
     if len(sys.argv) != 4:
         sys.exit(1)
 
-    uname, passwd = sys.argv[1], sys.argv[2]
+    uname = sys.argv[1]
+    passwd = sys.argv[2]
     dbname = sys.argv[3]
     inner_join(uname, passwd, dbname)
