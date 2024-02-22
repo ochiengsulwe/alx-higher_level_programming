@@ -1,8 +1,5 @@
 #!/usr/bin/python3
-"""The script lists all states with name starting with N. It is case-sensitive
-    
-    The script only allow returns with capital N. Lower case n is ignored.
-"""
+"""The script lists all states with name starting with N. Case-sensitive"""
 
 
 import MySQLdb
