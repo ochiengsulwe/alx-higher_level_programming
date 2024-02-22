@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """The script lists all states with name starting with N. Case-sensitive"""
 
-
 import MySQLdb
 import sys
 
