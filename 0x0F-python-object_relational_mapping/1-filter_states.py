@@ -32,7 +32,7 @@ def begin_N(uname, passwd, dbName):
                ORDER BY `id` ASC
                """)
 
-        states = cur.fetch()
+        states = cur.fetchall()
 
         for state in states:
             print(state)
