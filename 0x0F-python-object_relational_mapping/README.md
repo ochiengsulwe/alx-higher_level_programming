@@ -10,7 +10,7 @@ within my code.
 ## Table of Contents
 - [MySQLdb](#mysqldb)
 - [SQLAlchemy](#sqlalchemy)
-- [Python Virtual Envirnments](#Python Virtual Environments)
+- [Python Virtual Envirnments](#virtual)
 - [Conclusion](#conclusion)
 
 ## MySQLdb
