@@ -54,4 +54,4 @@ if __name__ == "__main__":
 
     uname, passwd = sys.argv[1], sys.argv[2]
     dbname, nsearch = sys.argv[3], sys.argv[4]
-    search(uname, passwd, dbname, nsearch)
+    arg_search(uname, passwd, dbname, nsearch)
