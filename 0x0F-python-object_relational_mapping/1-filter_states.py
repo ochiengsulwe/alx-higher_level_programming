@@ -17,11 +17,11 @@ def begin_N(uname, passwd, dbName):
             list: A list of all selected states in an ascending order.
     """
     try:
-        db = MySQLdb.connect(host: 'localhost'
-                             port: 3306,
-                             user: uname,
-                             passwd: passwd,
-                             db: dbName)
+        db = MySQLdb.connect(host='localhost',
+                             port=3306,
+                             user=uname,
+                             passwd=passwd,
+                             db=dbName)
 
         cur = db.cursor()
 
