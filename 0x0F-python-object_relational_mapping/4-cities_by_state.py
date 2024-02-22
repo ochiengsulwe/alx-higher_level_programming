@@ -49,9 +49,9 @@ def inner_join(uname, passwd, dbname):
 
 
 if __name__ == "__main__":
-    if len(sys.argv) != 5:
+    if len(sys.argv) != 4:
         sys.exit(1)
 
     uname, passwd = sys.argv[1], sys.argv[2]
-    dbname, nsearch = sys.argv[3], sys.argv[4]
+    dbname = sys.argv[3]
     arg_search(uname, passwd, dbname, nsearch)
