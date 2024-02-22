@@ -24,12 +24,14 @@ def inner_join(uname, passwd, dbname):
 
         cur = db.cursor()
 
-        cur.execute("""
-            SELECT `cities.id`, `cities.name`, `states.name`
-            FROM `cities`
-            INNER JOIN `states` ON `cities.state_id` = `states.id`
-            ORDER BY `cities.id` ASC
-            """)
+        query = """
+            SELECT cities.id, cities.name, states.name
+            FROM cities
+            INNER JOIN states ON cities.state_id = states.id
+            ORDER BY cities.id ASC
+            """
+
+        cur.execute(query)
 
         res = cur.fetchall()
 
