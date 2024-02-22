@@ -35,12 +35,13 @@ def cities_states(uname, passwd, dbname, nsearch):
             WHERE states.name LIKE BINARY %s
             """
 
-        cur.execute(query, (nsearch + "%",))
+        cur.execute(query, (nsearch,))
 
         res = cur.fetchall()
 
-        for i in res:
-            print(i)
+        cities = [city[0] for city in res]
+        print(", ".join(cities))
+
 
     except MySQLdb.Error as e:
         sys.exit(1)
