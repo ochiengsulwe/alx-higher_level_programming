@@ -28,9 +28,10 @@ def arg_search(uname, passwd, dbname, nsearch):
 
         cur = db.cursor()
 
-        query = "SELECT * FROM `states` WHERE `name` LIKE %s ORDER BY `id` ASC"
+        query = "SELECT * FROM `states` WHERE `name` = '{}'  ORDER BY `id`
+        ASC".format(nsearch)
 
-        cur.execute(query, (nsearch + "%",))
+        cur.execute(query)
 
         res = cur.fetchall()
 
