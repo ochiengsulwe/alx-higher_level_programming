@@ -28,8 +28,8 @@ def arg_search(uname, passwd, dbname, nsearch):
 
         cur = db.cursor()
 
-        query = """SELECT * FROM `states` WHERE `name` = '{}'  ORDER BY `id`
-        ASC""".format(nsearch)
+        query = """SELECT * FROM `states` WHERE `name` LIKE BINARY '{}'
+        ORDER BY `id` ASC""".format(nsearch)
 
         cur.execute(query)
 
