@@ -7,6 +7,7 @@ from sqlalchemy.ext.declarative import declarative_base
 
 Base = declarative_base()
 
+
 class State(Base):
     """State class represents a `state` table in the database."""
     __tablename__ = 'states'
@@ -18,7 +19,10 @@ class State(Base):
     id = Column(Integer, primary_key=True, autoincrement=True, nullable=False)
     name = Column(String(128), nullable=False)
 
-engine = create_engine('mysql://username:password@localhost:3306/database_name')
+
+engine = create_engine("""
+        mysql://username:password@localhost:3306/database_name
+        """)
 
 if __name__ == "__main__":
     Base.metadata.create_all(engine)
