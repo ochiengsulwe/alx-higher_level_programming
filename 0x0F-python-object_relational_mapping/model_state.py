@@ -19,6 +19,7 @@ class State(Base):
     id = Column(Integer, primary_key=True, autoincrement=True, nullable=False)
     name = Column(String(128), nullable=False)
 
+
 db_details = "mysql://username:password@localhost:3306/database_name"
 engine = create_engine(db_details)
 
