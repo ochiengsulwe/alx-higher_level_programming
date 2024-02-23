@@ -3,8 +3,9 @@
 
 from sqlalchemy import Column, Integer, String, create_engine
 from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import sessionmaker
 
-
+Session = sessionmaker(bind=engine)
 Base = declarative_base()
 
 
@@ -22,6 +23,7 @@ class State(Base):
 
 db_details = "mysql://username:password@localhost:3306/database_name"
 engine = create_engine(db_details)
+Session = sessionmaker(bind=engine)
 
 if __name__ == "__main__":
     Base.metadata.create_all(engine)
