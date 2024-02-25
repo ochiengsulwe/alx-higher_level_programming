@@ -22,7 +22,7 @@ def print_first(username: str, password: str, database: str) -> None:
                 else, prints string "Nothing".
     """
     db_conn = f"mysql://{username}:{password}@localhost:3306/{database}"
-    engine = create_engine(db_conn)
+    engine = create_engine(db_conn, pool_pre_ping=True)
     Base.metadata.create_all(engine)
 
     Session = sessionmaker(bind=engine)
@@ -31,7 +31,7 @@ def print_first(username: str, password: str, database: str) -> None:
     first_state = session.query(State).order_by(State.id).first()
 
     if first_state:
-        prnt(f"{first_state.id}: {first_state.name}")
+        print(f"{first_state.id}: {first_state.name}")
     else:
         print("Nothing")
 
