@@ -33,7 +33,7 @@ def print_with_a(username: str, password: str, database: str) -> None:
        )
 
     if state_with_a:
-        for state in states_with_a:
+        for state in state_with_a:
             print(f"{state.id}: {state.name}")
 
     session.close()
