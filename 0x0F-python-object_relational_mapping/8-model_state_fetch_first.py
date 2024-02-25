@@ -46,4 +46,4 @@ if __name__ == "__main__":
     password = sys.argv[2]
     database = sys.argv[3]
 
-    print_first_state(username, password, database)
+    print_first(username, password, database)
