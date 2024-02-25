@@ -3,7 +3,7 @@
 
 from sqlalchemy import Column, Integer, String, create_engine
 from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import sessionmaker
+from sqlalchemy.orm import sessionmaker, relationship
 
 Base = declarative_base()
 
@@ -21,7 +21,7 @@ class State(Base):
     cities = (
             relationship("City",
             cascade="all, delete-orphan",
-            back_populates="state"
+            back_populates="state")
             )
 
 

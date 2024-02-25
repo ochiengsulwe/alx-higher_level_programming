@@ -2,7 +2,7 @@
 """This module defines the class `City` of table `state` of the database."""
 
 from sqlalchemy import Column, Integer, String, create_engine, ForeignKey
-from sqlalchemy.orm import sessionmaker
+from sqlalchemy.orm import sessionmaker, relationship
 from relationship_state import Base
 
 
