@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""This module defines the class `State` of table `state` of the database."""
+"""This module defines the class `City` of table `state` of the database."""
 
 from sqlalchemy import Column, Integer, String, create_engine, ForeignKey
 from sqlalchemy.orm import sessionmaker
@@ -16,11 +16,4 @@ class City(Base):
 
     id = Column(Integer, primary_key=True, autoincrement=True, nullable=False)
     name = Column(String(128), nullable=False)
-
-
-db_details = "mysql://username:password@localhost:3306/database_name"
-engine = create_engine(db_details)
-Session = sessionmaker(bind=engine)
-
-if __name__ == "__main__":
-    Base.metadata.create_all(engine)
+    state_id = Column(Integer, ForeignKey('states.id'), nullable=False)
