@@ -22,7 +22,7 @@ def print_first(username: str, password: str, database: str) -> None:
                 else, prints string "Nothing".
     """
     db_conn = f"mysql://{username}:{password}@localhost:3306/{database}"
-    engine = create_engine(db_conn, pool_pre_ping=True)
+    engine = create_engine(db_conn)
     Base.metadata.create_all(engine)
 
     Session = sessionmaker(bind=engine)
