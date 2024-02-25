@@ -7,6 +7,7 @@ from sqlalchemy.orm import sessionmaker
 from model_city import City
 from model_state import Base, State
 
+
 def fetch_cities_by_state(username: str, password: str, database: str) -> None:
     """
     Fetches and prints all City objects from the specified database.
@@ -29,10 +30,15 @@ def fetch_cities_by_state(username: str, password: str, database: str) -> None:
     cities = session.query(City).order_by(City.id).all()
 
     for city in cities:
-        state_name = session.query(State.name).filter_by(id=city.state_id).scalar()
+        state_name = (
+                session.query(State.name)
+                .filter_by(id=city.state_id)
+                .scalar()
+               )
         print(f"{state_name}: ({city.id}) {city.name}")
 
     session.close()
+
 
 if __name__ == "__main__":
     if len(sys.argv) != 4:
