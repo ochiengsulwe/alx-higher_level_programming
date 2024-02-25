@@ -1,4 +1,4 @@
-#!/bin/usr/python3
+#!/usr/bin/python3
 """The script lists all `State` objects from the database `hbtn_0e_6_usa`"""
 import sys
 from sqlalchemy import create_engine
